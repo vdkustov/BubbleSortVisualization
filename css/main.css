@@ -1,0 +1,123 @@
+/*Main*/
+body {
+  font-family: sans-serif;
+  margin: 0px;
+}
+header {
+  text-align:left;
+  margin-left:20px;
+}
+footer {
+  height: 50px;
+}
+h1 {
+  margin-bottom: 35px;
+  color: #4998ff;
+  font-weight: normal;
+  font-size: 3em;
+}
+
+/*Blocks*/
+.block_sort {
+  min-height: 90px;
+  margin-top: 50px;
+}
+.block_cursor {
+  width: 150px;
+  left: 20px;
+  height: 4px;
+  border-radius: 15px;
+  background: #d05151;
+  position: absolute;
+  margin-top: 45px;
+}
+.block_cursor_sorting {
+  background: #00bf00;
+}
+.block_hint {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #868686;
+  font-size: 12pt;
+}
+.block_hint_title {
+  font-weight: bold;
+}
+.block_hint_text {
+  list-style: none;
+  padding-left: 0px;
+  line-height: 1.3;
+  width: 474px;
+  text-align: left;
+}
+
+/*Bubbles*/
+@keyframes zoomInAnimation {
+  0% {
+    transform: scale(0.0);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+.bubble {
+  height: 70px;
+  width: 70px;
+  vertical-align: middle;
+  border-radius: 50%;
+  position: absolute;
+  background: #4998ff;
+  margin: 10px;
+  animation: zoomInAnimation 0.5s ease-out;
+}
+.bubble_container {
+  margin-top: 33%;
+  color: #ffffff;
+  font-size: 18pt;
+  text-align: center;
+}
+.bubble_sorted {
+  background:#00bf00;
+}
+
+/*Buttons*/
+.btn {
+  width: 202px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 7px;
+  text-transform:uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+.btn_sort {
+  margin-top: 100px;
+  background: #ffffff;
+  border: 2px solid #4998ff;
+  color: #4998ff;
+  margin-left: 20px;
+}
+.btn_sort:hover {
+  background: #4998ff;
+  color:#ffffff;
+}
+.btn_refresh {
+  background: #ffffff;
+  border: 2px solid #d05151;
+  color: #d05151;
+}
+.btn_refresh:hover {
+  background: #d05151;
+  color:#ffffff;
+}
